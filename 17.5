@@ -10,6 +10,13 @@ namespace _17._5
     {
         static void Main(string[] args)
         {
+            DateTime data1 = DateTime.Parse(Console.ReadLine());
+            DateTime data2 = DateTime.Parse(Console.ReadLine());
+            if (data1.Day == data2.Day && data1.Month == data2.Month)
+                Console.WriteLine("Siete nati lo stesso giono");
+            else
+                Console.WriteLine("Siete nati due giorni diversi");
+            Console.ReadKey();
         }
     }
 }
